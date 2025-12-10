@@ -20,6 +20,7 @@ a {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 /* Body styles */
@@ -35,32 +36,39 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 /* Header styles */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo-span {
   color: #2e2f42;
 }
 
-.header {
+/* Navigation styles */
+.nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0px 156px;
-  height: 72px;
 }
 
-/* Navigation styles */
-.nav{
-  display: flex;
-  align-items: center;
-  gap: 76px;
-}
 .nav-list {
   display: flex;
   align-items: center;
@@ -71,8 +79,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 .nav-list-item:hover {
   color: #404bbf;
@@ -97,7 +107,7 @@ body {
 .address-list-item {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -120,9 +130,9 @@ body {
 
 .hero-title {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
   margin: 188px auto 0 auto;
@@ -134,17 +144,17 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 4%;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   padding: 16px 32px;
-  width: 169;
+  min-width: 169px;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px #00000026;
   margin: 0 auto 188px auto;
-
+  display: block;
 }
 
 .btn:hover {
@@ -175,22 +185,22 @@ body {
   margin: 120px 156px;
 }
 .features-list-item {
-  width: 264;
+  width: 264px;
   gap: 8px;
-
 }
+
 .features-list-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
 .features-list-text {
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -207,7 +217,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
@@ -236,8 +246,8 @@ body {
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-top: 32px;
   margin-bottom: 8px;
@@ -245,8 +255,8 @@ body {
 
 .team-list-position {
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 32px;
 }
@@ -289,7 +299,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -322,12 +332,11 @@ body {
 }
 
 .footer-text {
- color: #F4F4FD;
- font-family: Roboto;
- font-weight: 400;
- font-style: Regular;
- font-size: 16px;
- line-height: 24px;
- letter-spacing: 2%;
- width: 264px;
+  color: #F4F4FD;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
 }
