@@ -59,6 +59,10 @@ ul {
 }
 
 /* Navigation styles */
+.nav {
+  display: flex;
+  align-items: center;
+}
 .nav-list-item {
   font-weight: 500;
   font-size: 16px;
